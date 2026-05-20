@@ -1,0 +1,16 @@
+{
+  "building": "MB",
+  "nodes": [
+    { "id": "MB_2_LOBBY", "floor": "2", "building": "MB", "name": "Second Floor Elevators", "type": "Elevator", "zone": "Center", "pos_x": 100, "pos_y": 140 },
+    { "id": "MB_201", "floor": "2", "building": "MB", "name": "Rajaji Hall", "type": "Auditorium", "zone": "West Wing", "pos_x": 50, "pos_y": 140 },
+    { "id": "MB_202", "floor": "2", "building": "MB", "name": "SAS (School of Advanced Sciences) Dean Office", "type": "Office", "zone": "East Wing", "pos_x": 150, "pos_y": 140 },
+    { "id": "MB_203", "floor": "2", "building": "MB", "name": "Engineering Chemistry Lab 1", "type": "Lab", "zone": "North Wing", "pos_x": 100, "pos_y": 90 },
+    { "id": "MB_204", "floor": "2", "building": "MB", "name": "Engineering Chemistry Lab 2", "type": "Lab", "zone": "North Wing", "pos_x": 100, "pos_y": 60 }
+  ],
+  "edges": [
+    { "source_node": "MB_2_LOBBY", "target_node": "MB_201" },
+    { "source_node": "MB_2_LOBBY", "target_node": "MB_202" },
+    { "source_node": "MB_2_LOBBY", "target_node": "MB_203" },
+    { "source_node": "MB_203", "target_node": "MB_204" }
+  ]
+}

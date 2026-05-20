@@ -1,0 +1,9 @@
+{
+  "building": "MB",
+  "nodes": [],
+  "edges": [
+    { "source_node": "MB_G_LOBBY", "target_node": "MB_1_LOBBY" },
+    { "source_node": "MB_1_LOBBY", "target_node": "MB_2_LOBBY" },
+    { "source_node": "MB_2_LOBBY", "target_node": "MB_3_LOBBY" }
+  ]
+}

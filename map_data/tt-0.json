@@ -1,0 +1,16 @@
+{
+  "building": "TT",
+  "nodes": [
+    { "id": "TT_ENT", "floor": "G", "building": "TT", "name": "TT Main Entrance", "type": "Landmark", "zone": "South Wing", "pos_x": 100, "pos_y": 190 },
+    { "id": "TT_G_LOBBY", "floor": "G", "building": "TT", "name": "Ground Floor Elevators", "type": "Elevator", "zone": "Center", "pos_x": 100, "pos_y": 140 },
+    { "id": "TT_G01", "floor": "G", "building": "TT", "name": "Dr. Ambedkar Auditorium", "type": "Auditorium", "zone": "West Wing", "pos_x": 50, "pos_y": 140 },
+    { "id": "TT_G02", "floor": "G", "building": "TT", "name": "Kamaraj Auditorium", "type": "Auditorium", "zone": "East Wing", "pos_x": 150, "pos_y": 140 },
+    { "id": "TT_G03", "floor": "G", "building": "TT", "name": "TBI Incubation Centre", "type": "Lab", "zone": "North Wing", "pos_x": 100, "pos_y": 90 }
+  ],
+  "edges": [
+    { "source_node": "TT_ENT", "target_node": "TT_G_LOBBY" },
+    { "source_node": "TT_G_LOBBY", "target_node": "TT_G01" },
+    { "source_node": "TT_G_LOBBY", "target_node": "TT_G02" },
+    { "source_node": "TT_G_LOBBY", "target_node": "TT_G03" }
+  ]
+}

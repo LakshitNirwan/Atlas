@@ -1,0 +1,16 @@
+{
+  "building": "TT",
+  "nodes": [
+    { "id": "TT_2_LOBBY", "floor": "2", "building": "TT", "name": "Second Floor Elevators", "type": "Elevator", "zone": "Center", "pos_x": 100, "pos_y": 140 },
+    { "id": "TT_201", "floor": "2", "building": "TT", "name": "VOC Gallery", "type": "Auditorium", "zone": "West Wing", "pos_x": 50, "pos_y": 140 },
+    { "id": "TT_202", "floor": "2", "building": "TT", "name": "Fluid Mechanics Lab", "type": "Lab", "zone": "East Wing", "pos_x": 150, "pos_y": 140 },
+    { "id": "TT_203", "floor": "2", "building": "TT", "name": "Thermal Engineering Lab", "type": "Lab", "zone": "North Wing", "pos_x": 100, "pos_y": 90 },
+    { "id": "TT_204", "floor": "2", "building": "TT", "name": "Mechatronics Lab", "type": "Lab", "zone": "South Wing", "pos_x": 100, "pos_y": 190 }
+  ],
+  "edges": [
+    { "source_node": "TT_2_LOBBY", "target_node": "TT_201" },
+    { "source_node": "TT_2_LOBBY", "target_node": "TT_202" },
+    { "source_node": "TT_2_LOBBY", "target_node": "TT_203" },
+    { "source_node": "TT_2_LOBBY", "target_node": "TT_204" }
+  ]
+}

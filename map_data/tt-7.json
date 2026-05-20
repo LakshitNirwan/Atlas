@@ -1,0 +1,16 @@
+{
+  "building": "TT",
+  "nodes": [
+    { "id": "TT_7_LOBBY", "floor": "7", "building": "TT", "name": "Seventh Floor Elevators", "type": "Elevator", "zone": "Center", "pos_x": 100, "pos_y": 140 },
+    { "id": "TT_701", "floor": "7", "building": "TT", "name": "Dean's Office", "type": "Office", "zone": "West Wing", "pos_x": 50, "pos_y": 140 },
+    { "id": "TT_702", "floor": "7", "building": "TT", "name": "Psychometric Lab", "type": "Lab", "zone": "East Wing", "pos_x": 150, "pos_y": 140 },
+    { "id": "TT_703", "floor": "7", "building": "TT", "name": "Executive Board Room", "type": "Office", "zone": "North Wing", "pos_x": 100, "pos_y": 90 },
+    { "id": "TT_704", "floor": "7", "building": "TT", "name": "Faculty Cabins (SMEC)", "type": "Office", "zone": "South Wing", "pos_x": 100, "pos_y": 190 }
+  ],
+  "edges": [
+    { "source_node": "TT_7_LOBBY", "target_node": "TT_701" },
+    { "source_node": "TT_7_LOBBY", "target_node": "TT_702" },
+    { "source_node": "TT_7_LOBBY", "target_node": "TT_703" },
+    { "source_node": "TT_7_LOBBY", "target_node": "TT_704" }
+  ]
+}

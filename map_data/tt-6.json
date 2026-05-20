@@ -1,0 +1,16 @@
+{
+  "building": "TT",
+  "nodes": [
+    { "id": "TT_6_LOBBY", "floor": "6", "building": "TT", "name": "Sixth Floor Elevators", "type": "Elevator", "zone": "Center", "pos_x": 100, "pos_y": 140 },
+    { "id": "TT_601", "floor": "6", "building": "TT", "name": "Robotics Lab", "type": "Lab", "zone": "West Wing", "pos_x": 50, "pos_y": 140 },
+    { "id": "TT_602", "floor": "6", "building": "TT", "name": "Automotive Engineering Lab", "type": "Lab", "zone": "East Wing", "pos_x": 150, "pos_y": 140 },
+    { "id": "TT_603", "floor": "6", "building": "TT", "name": "Advanced Manufacturing Lab", "type": "Lab", "zone": "North Wing", "pos_x": 100, "pos_y": 90 },
+    { "id": "TT_604", "floor": "6", "building": "TT", "name": "CAD/CAM Lab", "type": "Lab", "zone": "South Wing", "pos_x": 100, "pos_y": 190 }
+  ],
+  "edges": [
+    { "source_node": "TT_6_LOBBY", "target_node": "TT_601" },
+    { "source_node": "TT_6_LOBBY", "target_node": "TT_602" },
+    { "source_node": "TT_6_LOBBY", "target_node": "TT_603" },
+    { "source_node": "TT_6_LOBBY", "target_node": "TT_604" }
+  ]
+}

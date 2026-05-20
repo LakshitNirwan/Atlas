@@ -1,0 +1,26 @@
+{
+  "floor": "5",
+  "building": "PRP",
+  "nodes": [
+    { "id": "node_lobby_5", "name": "5th Floor Lobby", "type": "Waypoint", "zone": "Core", "coordinates": { "x": 50, "y": 60 }, "connectedTo": ["node_lift_5", "node_corr_right_5", "node_corr_left_5", "node_corr_back_5"] },
+    { "id": "node_lift_5", "name": "Main Elevators", "type": "Transport", "zone": "Core", "coordinates": { "x": 50, "y": 50 }, "connectedTo": ["node_lobby_5", "node_lift_4", "node_lift_6"] },
+    { "id": "node_corr_right_5", "name": "Right Corridor", "type": "Corridor", "zone": "Right Wing", "coordinates": { "x": 75, "y": 50 }, "connectedTo": ["node_lobby_5", "501", "502", "503", "504"] },
+    { "id": "node_corr_left_5", "name": "Left Corridor", "type": "Corridor", "zone": "Left Wing", "coordinates": { "x": 25, "y": 50 }, "connectedTo": ["node_lobby_5", "505", "506", "507", "508"] },
+    { "id": "node_corr_back_5", "name": "Back Corridor", "type": "Corridor", "zone": "Back Wing", "coordinates": { "x": 50, "y": 20 }, "connectedTo": ["node_lobby_5", "510", "511", "512", "513"] },
+
+    { "id": "501", "name": "App Development Lab", "type": "Lab", "zone": "Right Wing", "coordinates": { "x": 75, "y": 35 }, "connectedTo": ["node_corr_right_5"] },
+    { "id": "502", "name": "Web Technology Lab", "type": "Lab", "zone": "Right Wing", "coordinates": { "x": 80, "y": 25 }, "connectedTo": ["node_corr_right_5"] },
+    { "id": "503", "name": "Blockchain Research Center", "type": "Lab", "zone": "Right Wing", "coordinates": { "x": 85, "y": 15 }, "connectedTo": ["node_corr_right_5"] },
+    { "id": "504", "name": "Faculty Cabins", "type": "Faculty", "zone": "Right Wing", "coordinates": { "x": 90, "y": 60 }, "connectedTo": ["node_corr_right_5"] },
+    
+    { "id": "505", "name": "Database Systems Lab", "type": "Lab", "zone": "Left Wing", "coordinates": { "x": 20, "y": 45 }, "connectedTo": ["node_corr_left_5"] },
+    { "id": "506", "name": "Operating Systems Lab", "type": "Lab", "zone": "Left Wing", "coordinates": { "x": 15, "y": 35 }, "connectedTo": ["node_corr_left_5"] },
+    { "id": "507", "name": "General Computing Lab", "type": "Lab", "zone": "Left Wing", "coordinates": { "x": 10, "y": 25 }, "connectedTo": ["node_corr_left_5"] },
+    { "id": "508", "name": "General Computing Lab", "type": "Lab", "zone": "Left Wing", "coordinates": { "x": 5, "y": 15 }, "connectedTo": ["node_corr_left_5"] },
+
+    { "id": "510", "name": "Ladies Restroom", "type": "Restroom", "zone": "Back Wing", "coordinates": { "x": 40, "y": 25 }, "connectedTo": ["node_corr_back_5"] },
+    { "id": "511", "name": "Gents Restroom", "type": "Restroom", "zone": "Back Wing", "coordinates": { "x": 60, "y": 25 }, "connectedTo": ["node_corr_back_5"] },
+    { "id": "512", "name": "Meeting Room 5A", "type": "Admin", "zone": "Back Wing", "coordinates": { "x": 35, "y": 10 }, "connectedTo": ["node_corr_back_5"] },
+    { "id": "513", "name": "Meeting Room 5B", "type": "Admin", "zone": "Back Wing", "coordinates": { "x": 65, "y": 10 }, "connectedTo": ["node_corr_back_5"] }
+  ]
+}

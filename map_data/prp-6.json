@@ -1,0 +1,24 @@
+{
+  "floor": "6",
+  "building": "PRP",
+  "nodes": [
+    { "id": "node_lobby_6", "name": "6th Floor Lobby", "type": "Waypoint", "zone": "Core", "coordinates": { "x": 50, "y": 60 }, "connectedTo": ["node_lift_6", "node_corr_right_6", "node_corr_left_6", "node_corr_back_6"] },
+    { "id": "node_lift_6", "name": "Main Elevators", "type": "Transport", "zone": "Core", "coordinates": { "x": 50, "y": 50 }, "connectedTo": ["node_lobby_6", "node_lift_5", "node_lift_7"] },
+    { "id": "node_corr_right_6", "name": "Right Corridor", "type": "Corridor", "zone": "Right Wing", "coordinates": { "x": 75, "y": 50 }, "connectedTo": ["node_lobby_6", "601", "602", "603"] },
+    { "id": "node_corr_left_6", "name": "Left Corridor", "type": "Corridor", "zone": "Left Wing", "coordinates": { "x": 25, "y": 50 }, "connectedTo": ["node_lobby_6", "605", "606", "607"] },
+    { "id": "node_corr_back_6", "name": "Back Corridor", "type": "Corridor", "zone": "Back Wing", "coordinates": { "x": 50, "y": 20 }, "connectedTo": ["node_lobby_6", "610", "611", "612", "613"] },
+
+    { "id": "601", "name": "Industry Tech Park - Center A", "type": "Research", "zone": "Right Wing", "coordinates": { "x": 75, "y": 35 }, "connectedTo": ["node_corr_right_6"] },
+    { "id": "602", "name": "Industry Tech Park - Center B", "type": "Research", "zone": "Right Wing", "coordinates": { "x": 80, "y": 25 }, "connectedTo": ["node_corr_right_6"] },
+    { "id": "603", "name": "Conference Center", "type": "Admin", "zone": "Right Wing", "coordinates": { "x": 85, "y": 15 }, "connectedTo": ["node_corr_right_6"] },
+    
+    { "id": "605", "name": "Research Scholar Workspace", "type": "Research", "zone": "Left Wing", "coordinates": { "x": 20, "y": 45 }, "connectedTo": ["node_corr_left_6"] },
+    { "id": "606", "name": "Research Scholar Workspace", "type": "Research", "zone": "Left Wing", "coordinates": { "x": 15, "y": 35 }, "connectedTo": ["node_corr_left_6"] },
+    { "id": "607", "name": "Advanced Electronics Lab", "type": "Lab", "zone": "Left Wing", "coordinates": { "x": 10, "y": 25 }, "connectedTo": ["node_corr_left_6"] },
+
+    { "id": "610", "name": "Ladies Restroom", "type": "Restroom", "zone": "Back Wing", "coordinates": { "x": 40, "y": 25 }, "connectedTo": ["node_corr_back_6"] },
+    { "id": "611", "name": "Gents Restroom", "type": "Restroom", "zone": "Back Wing", "coordinates": { "x": 60, "y": 25 }, "connectedTo": ["node_corr_back_6"] },
+    { "id": "612", "name": "Executive Lounge", "type": "Amenity", "zone": "Back Wing", "coordinates": { "x": 35, "y": 10 }, "connectedTo": ["node_corr_back_6"] },
+    { "id": "613", "name": "Server Architecture Hub", "type": "Service", "zone": "Back Wing", "coordinates": { "x": 65, "y": 10 }, "connectedTo": ["node_corr_back_6"] }
+  ]
+}

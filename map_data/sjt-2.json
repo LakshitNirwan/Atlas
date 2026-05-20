@@ -1,0 +1,30 @@
+{
+  "floor": "2",
+  "building": "SJT",
+  "nodes": [
+    { "id": "sjt_atrium_2", "name": "2nd Floor Atrium", "type": "Waypoint", "zone": "Core", "coordinates": { "x": 50, "y": 50 }, "connectedTo": ["sjt_lift_2", "sjt_corr_N_2", "sjt_corr_S_2", "sjt_corr_E_2", "sjt_corr_W_2"] },
+    { "id": "sjt_lift_2", "name": "Main Elevators", "type": "Transport", "zone": "Core", "coordinates": { "x": 50, "y": 40 }, "connectedTo": ["sjt_atrium_2", "sjt_lift_1", "sjt_lift_3"] },
+    { "id": "sjt_corr_N_2", "name": "North Corridor", "type": "Corridor", "zone": "North Wing", "coordinates": { "x": 50, "y": 20 }, "connectedTo": ["sjt_atrium_2", "216", "217", "218", "219"] },
+    { "id": "sjt_corr_S_2", "name": "South Corridor", "type": "Corridor", "zone": "South Wing", "coordinates": { "x": 50, "y": 80 }, "connectedTo": ["sjt_atrium_2", "207A", "208", "211", "215"] },
+    { "id": "sjt_corr_E_2", "name": "East Corridor", "type": "Corridor", "zone": "East Wing", "coordinates": { "x": 80, "y": 50 }, "connectedTo": ["sjt_atrium_2", "210", "213", "217A"] },
+    { "id": "sjt_corr_W_2", "name": "West Corridor", "type": "Corridor", "zone": "West Wing", "coordinates": { "x": 20, "y": 50 }, "connectedTo": ["sjt_atrium_2", "209", "214", "220"] },
+
+    { "id": "216", "name": "Web Development Lab", "type": "Lab", "zone": "North Wing", "coordinates": { "x": 40, "y": 15 }, "connectedTo": ["sjt_corr_N_2"] },
+    { "id": "217", "name": "Information & Network Security Lab", "type": "Lab", "zone": "North Wing", "coordinates": { "x": 60, "y": 15 }, "connectedTo": ["sjt_corr_N_2"] },
+    { "id": "218", "name": "Artificial Intelligence Lab", "type": "Lab", "zone": "North Wing", "coordinates": { "x": 40, "y": 5 }, "connectedTo": ["sjt_corr_N_2"] },
+    { "id": "219", "name": "Computer Vision Lab", "type": "Lab", "zone": "North Wing", "coordinates": { "x": 60, "y": 5 }, "connectedTo": ["sjt_corr_N_2"] },
+    
+    { "id": "207A", "name": "Smart Classroom", "type": "Academic", "zone": "South Wing", "coordinates": { "x": 40, "y": 75 }, "connectedTo": ["sjt_corr_S_2"] },
+    { "id": "208", "name": "Classroom", "type": "Academic", "zone": "South Wing", "coordinates": { "x": 60, "y": 75 }, "connectedTo": ["sjt_corr_S_2"] },
+    { "id": "211", "name": "Classroom", "type": "Academic", "zone": "South Wing", "coordinates": { "x": 40, "y": 85 }, "connectedTo": ["sjt_corr_S_2"] },
+    { "id": "215", "name": "Classroom", "type": "Academic", "zone": "South Wing", "coordinates": { "x": 60, "y": 85 }, "connectedTo": ["sjt_corr_S_2"] },
+
+    { "id": "210", "name": "Staff Rooms (Mixed)", "type": "Faculty", "zone": "East Wing", "coordinates": { "x": 85, "y": 40 }, "connectedTo": ["sjt_corr_E_2"] },
+    { "id": "213", "name": "Staff Rooms (Mixed)", "type": "Faculty", "zone": "East Wing", "coordinates": { "x": 85, "y": 60 }, "connectedTo": ["sjt_corr_E_2"] },
+    { "id": "217A", "name": "Research Cabin", "type": "Faculty", "zone": "East Wing", "coordinates": { "x": 90, "y": 50 }, "connectedTo": ["sjt_corr_E_2"] },
+
+    { "id": "209", "name": "Boys Toilet", "type": "Restroom", "zone": "West Wing", "coordinates": { "x": 15, "y": 40 }, "connectedTo": ["sjt_corr_W_2"] },
+    { "id": "214", "name": "Girls Toilet", "type": "Restroom", "zone": "West Wing", "coordinates": { "x": 15, "y": 60 }, "connectedTo": ["sjt_corr_W_2"] },
+    { "id": "220", "name": "Staff Toilet", "type": "Restroom", "zone": "West Wing", "coordinates": { "x": 10, "y": 50 }, "connectedTo": ["sjt_corr_W_2"] }
+  ]
+}

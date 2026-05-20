@@ -1,0 +1,16 @@
+{
+  "building": "TT",
+  "nodes": [
+    { "id": "TT_1_LOBBY", "floor": "1", "building": "TT", "name": "First Floor Elevators", "type": "Elevator", "zone": "Center", "pos_x": 100, "pos_y": 140 },
+    { "id": "TT_101", "floor": "1", "building": "TT", "name": "Centre for Nanotechnology", "type": "Lab", "zone": "West Wing", "pos_x": 50, "pos_y": 140 },
+    { "id": "TT_102", "floor": "1", "building": "TT", "name": "Advanced Materials Lab", "type": "Lab", "zone": "East Wing", "pos_x": 150, "pos_y": 140 },
+    { "id": "TT_103", "floor": "1", "building": "TT", "name": "Biomedical Engineering Lab", "type": "Lab", "zone": "North Wing", "pos_x": 100, "pos_y": 90 },
+    { "id": "TT_104", "floor": "1", "building": "TT", "name": "Smart Classroom 1", "type": "Classroom", "zone": "South Wing", "pos_x": 100, "pos_y": 190 }
+  ],
+  "edges": [
+    { "source_node": "TT_1_LOBBY", "target_node": "TT_101" },
+    { "source_node": "TT_1_LOBBY", "target_node": "TT_102" },
+    { "source_node": "TT_1_LOBBY", "target_node": "TT_103" },
+    { "source_node": "TT_1_LOBBY", "target_node": "TT_104" }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "floor": "1",
+  "building": "PRP",
+  "nodes": [
+    { "id": "node_lobby_1", "name": "1st Floor Lobby", "type": "Waypoint", "zone": "Core", "coordinates": { "x": 50, "y": 60 }, "connectedTo": ["node_lift_1", "node_corr_right_1", "node_corr_left_1", "node_corr_back_1"] },
+    { "id": "node_lift_1", "name": "Main Elevators", "type": "Transport", "zone": "Core", "coordinates": { "x": 50, "y": 50 }, "connectedTo": ["node_lobby_1", "node_lift_G", "node_lift_2"] },
+    { "id": "node_corr_right_1", "name": "Right Corridor", "type": "Corridor", "zone": "Right Wing", "coordinates": { "x": 75, "y": 50 }, "connectedTo": ["node_lobby_1", "101", "102", "103", "104", "105"] },
+    { "id": "node_corr_left_1", "name": "Left Corridor", "type": "Corridor", "zone": "Left Wing", "coordinates": { "x": 25, "y": 50 }, "connectedTo": ["node_lobby_1", "106", "107", "108", "109", "110"] },
+    { "id": "node_corr_back_1", "name": "Back Corridor", "type": "Corridor", "zone": "Back Wing", "coordinates": { "x": 50, "y": 20 }, "connectedTo": ["node_lobby_1", "111", "112", "114", "115"] },
+
+    { "id": "101", "name": "Smart Classroom", "type": "Academic", "zone": "Right Wing", "coordinates": { "x": 70, "y": 45 }, "connectedTo": ["node_corr_right_1"] },
+    { "id": "102", "name": "Smart Classroom", "type": "Academic", "zone": "Right Wing", "coordinates": { "x": 75, "y": 35 }, "connectedTo": ["node_corr_right_1"] },
+    { "id": "103", "name": "Smart Classroom", "type": "Academic", "zone": "Right Wing", "coordinates": { "x": 80, "y": 25 }, "connectedTo": ["node_corr_right_1"] },
+    { "id": "104", "name": "Smart Classroom", "type": "Academic", "zone": "Right Wing", "coordinates": { "x": 85, "y": 15 }, "connectedTo": ["node_corr_right_1"] },
+    { "id": "105", "name": "Faculty Cabins", "type": "Faculty", "zone": "Right Wing", "coordinates": { "x": 90, "y": 60 }, "connectedTo": ["node_corr_right_1"] },
+    
+    { "id": "106", "name": "Gallery Hall A", "type": "Academic", "zone": "Left Wing", "coordinates": { "x": 20, "y": 45 }, "connectedTo": ["node_corr_left_1"] },
+    { "id": "107", "name": "Gallery Hall B", "type": "Academic", "zone": "Left Wing", "coordinates": { "x": 15, "y": 35 }, "connectedTo": ["node_corr_left_1"] },
+    { "id": "108", "name": "Smart Classroom", "type": "Academic", "zone": "Left Wing", "coordinates": { "x": 10, "y": 25 }, "connectedTo": ["node_corr_left_1"] },
+    { "id": "109", "name": "Smart Classroom", "type": "Academic", "zone": "Left Wing", "coordinates": { "x": 5, "y": 15 }, "connectedTo": ["node_corr_left_1"] },
+    { "id": "110", "name": "Meeting Room", "type": "Admin", "zone": "Left Wing", "coordinates": { "x": 20, "y": 55 }, "connectedTo": ["node_corr_left_1"] },
+
+    { "id": "111", "name": "Ladies Restroom", "type": "Restroom", "zone": "Back Wing", "coordinates": { "x": 40, "y": 25 }, "connectedTo": ["node_corr_back_1"] },
+    { "id": "112", "name": "Gents Restroom", "type": "Restroom", "zone": "Back Wing", "coordinates": { "x": 60, "y": 25 }, "connectedTo": ["node_corr_back_1"] },
+    { "id": "114", "name": "Dean's Office", "type": "Admin", "zone": "Back Wing", "coordinates": { "x": 50, "y": 10 }, "connectedTo": ["node_corr_back_1"] },
+    { "id": "115", "name": "Seminar Room", "type": "Academic", "zone": "Back Wing", "coordinates": { "x": 65, "y": 15 }, "connectedTo": ["node_corr_back_1"] }
+  ]
+}

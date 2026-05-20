@@ -1,0 +1,30 @@
+{
+  "floor": "G",
+  "building": "PRP",
+  "nodes": [
+    { "id": "node_entrance_G", "name": "Main Entrance", "type": "Waypoint", "zone": "Exterior", "coordinates": { "x": 50, "y": 95 }, "connectedTo": ["node_lobby_G"] },
+    { "id": "node_lobby_G", "name": "Ground Lobby", "type": "Waypoint", "zone": "Core", "coordinates": { "x": 50, "y": 60 }, "connectedTo": ["node_entrance_G", "node_lift_G", "node_corr_right_G", "node_corr_left_G", "node_corr_back_G"] },
+    { "id": "node_lift_G", "name": "Main Elevators", "type": "Transport", "zone": "Core", "coordinates": { "x": 50, "y": 50 }, "connectedTo": ["node_lobby_G", "node_lift_1"] },
+    { "id": "node_corr_right_G", "name": "Right Corridor", "type": "Corridor", "zone": "Right Wing", "coordinates": { "x": 75, "y": 50 }, "connectedTo": ["node_lobby_G", "G03", "G06", "G08", "G10", "G14", "G19"] },
+    { "id": "node_corr_left_G", "name": "Left Corridor", "type": "Corridor", "zone": "Left Wing", "coordinates": { "x": 25, "y": 50 }, "connectedTo": ["node_lobby_G", "G04", "G07", "G17", "G18"] },
+    { "id": "node_corr_back_G", "name": "Back Corridor", "type": "Corridor", "zone": "Back Wing", "coordinates": { "x": 50, "y": 20 }, "connectedTo": ["node_lobby_G", "G01", "G02", "G05", "G09", "G13", "G15", "G16"] },
+
+    { "id": "G03", "name": "Classroom", "type": "Academic", "zone": "Right Wing", "coordinates": { "x": 70, "y": 45 }, "connectedTo": ["node_corr_right_G"] },
+    { "id": "G06", "name": "Classroom", "type": "Academic", "zone": "Right Wing", "coordinates": { "x": 75, "y": 35 }, "connectedTo": ["node_corr_right_G"] },
+    { "id": "G08", "name": "Classroom", "type": "Academic", "zone": "Right Wing", "coordinates": { "x": 80, "y": 25 }, "connectedTo": ["node_corr_right_G"] },
+    { "id": "G10", "name": "Classroom", "type": "Academic", "zone": "Right Wing", "coordinates": { "x": 85, "y": 15 }, "connectedTo": ["node_corr_right_G"] },
+    { "id": "G13", "name": "Male Staff Restroom", "type": "Restroom", "zone": "Back Wing", "coordinates": { "x": 65, "y": 20 }, "connectedTo": ["node_corr_back_G"] },
+    { "id": "G14", "name": "SCOPE School Office", "type": "Admin", "zone": "Right Wing", "coordinates": { "x": 85, "y": 50 }, "connectedTo": ["node_corr_right_G"] },
+    { "id": "G19", "name": "Faculty Cabins", "type": "Faculty", "zone": "Right Wing", "coordinates": { "x": 90, "y": 60 }, "connectedTo": ["node_corr_right_G"] },
+    { "id": "G04", "name": "M.Sc. Chemistry Lab", "type": "Lab", "zone": "Left Wing", "coordinates": { "x": 20, "y": 45 }, "connectedTo": ["node_corr_left_G"] },
+    { "id": "G07", "name": "B.Tech Chemistry Lab", "type": "Lab", "zone": "Left Wing", "coordinates": { "x": 15, "y": 35 }, "connectedTo": ["node_corr_left_G"] },
+    { "id": "G17", "name": "B.Tech Physics Lab", "type": "Lab", "zone": "Left Wing", "coordinates": { "x": 10, "y": 25 }, "connectedTo": ["node_corr_left_G"] },
+    { "id": "G18", "name": "M.Sc. Physics Lab", "type": "Lab", "zone": "Left Wing", "coordinates": { "x": 5, "y": 15 }, "connectedTo": ["node_corr_left_G"] },
+    { "id": "G01", "name": "Ladies Restroom", "type": "Restroom", "zone": "Back Wing", "coordinates": { "x": 40, "y": 25 }, "connectedTo": ["node_corr_back_G"] },
+    { "id": "G02", "name": "Gents Restroom", "type": "Restroom", "zone": "Back Wing", "coordinates": { "x": 60, "y": 25 }, "connectedTo": ["node_corr_back_G"] },
+    { "id": "G05", "name": "Electrical Room", "type": "Service", "zone": "Back Wing", "coordinates": { "x": 35, "y": 20 }, "connectedTo": ["node_corr_back_G"] },
+    { "id": "G09", "name": "Food Court", "type": "Amenity", "zone": "Back Wing", "coordinates": { "x": 50, "y": 5 }, "connectedTo": ["node_corr_back_G"] },
+    { "id": "G15", "name": "Clean Env Lab 1", "type": "Lab", "zone": "Back Wing", "coordinates": { "x": 30, "y": 15 }, "connectedTo": ["node_corr_back_G"] },
+    { "id": "G16", "name": "Clean Env Lab 2", "type": "Lab", "zone": "Back Wing", "coordinates": { "x": 70, "y": 15 }, "connectedTo": ["node_corr_back_G"] }
+  ]
+}

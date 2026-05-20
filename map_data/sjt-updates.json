@@ -1,0 +1,24 @@
+{
+  "building": "SJT",
+  "nodes": [
+    { "id": "SJT_G_FOOD", "floor": "G", "building": "SJT", "name": "SJT Food Court (Dominos/Lounge)", "type": "Landmark", "zone": "East Wing", "pos_x": 160, "pos_y": 140 },
+    { "id": "SJT_3_PAT", "floor": "3", "building": "SJT", "name": "PAT (Placement & Training) Centre", "type": "Office", "zone": "North Wing", "pos_x": 120, "pos_y": 60 },
+    { "id": "SJT_3_GD", "floor": "3", "building": "SJT", "name": "PAT Group Discussion Cabins", "type": "Academic", "zone": "North Wing", "pos_x": 140, "pos_y": 60 },
+    { "id": "SJT_G_LOBBY", "floor": "G", "building": "SJT", "name": "Ground Floor Elevators", "type": "Elevator", "zone": "Center", "pos_x": 100, "pos_y": 140 },
+    { "id": "SJT_3_LOBBY", "floor": "3", "building": "SJT", "name": "Third Floor Elevators", "type": "Elevator", "zone": "Center", "pos_x": 100, "pos_y": 140 },
+    { "id": "SJT_4_LOBBY", "floor": "4", "building": "SJT", "name": "Fourth Floor Elevators", "type": "Elevator", "zone": "Center", "pos_x": 100, "pos_y": 140 },
+    { "id": "SJT_5_LOBBY", "floor": "5", "building": "SJT", "name": "Fifth Floor Elevators", "type": "Elevator", "zone": "Center", "pos_x": 100, "pos_y": 140 },
+    { "id": "SJT_6_LOBBY", "floor": "6", "building": "SJT", "name": "Sixth Floor Elevators", "type": "Elevator", "zone": "Center", "pos_x": 100, "pos_y": 140 },
+    { "id": "SJT_8_LOBBY", "floor": "8", "building": "SJT", "name": "Eighth Floor Elevators", "type": "Elevator", "zone": "Center", "pos_x": 100, "pos_y": 140 }
+  ],
+  "edges": [
+    { "source_node": "SJT_G_LOBBY", "target_node": "SJT_G_FOOD" },
+    { "source_node": "SJT_3_LOBBY", "target_node": "SJT_3_PAT" },
+    { "source_node": "SJT_3_PAT", "target_node": "SJT_3_GD" },
+    { "source_node": "SJT_G_LOBBY", "target_node": "SJT_3_LOBBY" },
+    { "source_node": "SJT_3_LOBBY", "target_node": "SJT_4_LOBBY" },
+    { "source_node": "SJT_4_LOBBY", "target_node": "SJT_5_LOBBY" },
+    { "source_node": "SJT_5_LOBBY", "target_node": "SJT_6_LOBBY" },
+    { "source_node": "SJT_6_LOBBY", "target_node": "SJT_8_LOBBY" }
+  ]
+}

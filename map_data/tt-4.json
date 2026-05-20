@@ -1,0 +1,16 @@
+{
+  "building": "TT",
+  "nodes": [
+    { "id": "TT_4_LOBBY", "floor": "4", "building": "TT", "name": "Fourth Floor Elevators", "type": "Elevator", "zone": "Center", "pos_x": 100, "pos_y": 140 },
+    { "id": "TT_401", "floor": "4", "building": "TT", "name": "Electronics Lab", "type": "Lab", "zone": "West Wing", "pos_x": 50, "pos_y": 140 },
+    { "id": "TT_402", "floor": "4", "building": "TT", "name": "Microprocessor Lab", "type": "Lab", "zone": "East Wing", "pos_x": 150, "pos_y": 140 },
+    { "id": "TT_403", "floor": "4", "building": "TT", "name": "VLSI Design Lab", "type": "Lab", "zone": "North Wing", "pos_x": 100, "pos_y": 90 },
+    { "id": "TT_404", "floor": "4", "building": "TT", "name": "Embedded Systems Lab", "type": "Lab", "zone": "South Wing", "pos_x": 100, "pos_y": 190 }
+  ],
+  "edges": [
+    { "source_node": "TT_4_LOBBY", "target_node": "TT_401" },
+    { "source_node": "TT_4_LOBBY", "target_node": "TT_402" },
+    { "source_node": "TT_4_LOBBY", "target_node": "TT_403" },
+    { "source_node": "TT_4_LOBBY", "target_node": "TT_404" }
+  ]
+}

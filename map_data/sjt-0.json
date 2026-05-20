@@ -1,0 +1,25 @@
+{
+  "floor": "G",
+  "building": "SJT",
+  "nodes": [
+    { "id": "sjt_entrance_G", "name": "SJT Main Entrance", "type": "Waypoint", "zone": "Exterior", "coordinates": { "x": 50, "y": 95 }, "connectedTo": ["sjt_atrium_G"] },
+    { "id": "sjt_atrium_G", "name": "Ground Atrium", "type": "Waypoint", "zone": "Core", "coordinates": { "x": 50, "y": 50 }, "connectedTo": ["sjt_entrance_G", "sjt_lift_G", "sjt_corr_N_G", "sjt_corr_S_G", "sjt_corr_E_G", "sjt_corr_W_G"] },
+    { "id": "sjt_lift_G", "name": "Main Elevators", "type": "Transport", "zone": "Core", "coordinates": { "x": 50, "y": 40 }, "connectedTo": ["sjt_atrium_G", "sjt_lift_1"] },
+    { "id": "sjt_corr_N_G", "name": "North Corridor", "type": "Corridor", "zone": "North Wing", "coordinates": { "x": 50, "y": 20 }, "connectedTo": ["sjt_atrium_G", "G13", "G11", "G12"] },
+    { "id": "sjt_corr_S_G", "name": "South Corridor", "type": "Corridor", "zone": "South Wing", "coordinates": { "x": 50, "y": 80 }, "connectedTo": ["sjt_atrium_G", "PAT_Office", "G01", "G14"] },
+    { "id": "sjt_corr_E_G", "name": "East Corridor", "type": "Corridor", "zone": "East Wing", "coordinates": { "x": 80, "y": 50 }, "connectedTo": ["sjt_atrium_G", "G17", "G18", "G16"] },
+    { "id": "sjt_corr_W_G", "name": "West Corridor", "type": "Corridor", "zone": "West Wing", "coordinates": { "x": 20, "y": 50 }, "connectedTo": ["sjt_atrium_G", "sjt_restroom_M_G", "sjt_restroom_F_G"] },
+
+    { "id": "G13", "name": "Arasan Canteen", "type": "Amenity", "zone": "North Wing", "coordinates": { "x": 50, "y": 10 }, "connectedTo": ["sjt_corr_N_G"] },
+    { "id": "G11", "name": "Dining Hall 1", "type": "Amenity", "zone": "North Wing", "coordinates": { "x": 40, "y": 15 }, "connectedTo": ["sjt_corr_N_G"] },
+    { "id": "G12", "name": "Dining Hall 2", "type": "Amenity", "zone": "North Wing", "coordinates": { "x": 60, "y": 15 }, "connectedTo": ["sjt_corr_N_G"] },
+    { "id": "PAT_Office", "name": "Placement & Training (PAT) Office", "type": "Admin", "zone": "South Wing", "coordinates": { "x": 50, "y": 85 }, "connectedTo": ["sjt_corr_S_G"] },
+    { "id": "G01", "name": "Classroom", "type": "Academic", "zone": "South Wing", "coordinates": { "x": 40, "y": 75 }, "connectedTo": ["sjt_corr_S_G"] },
+    { "id": "G14", "name": "Classroom", "type": "Academic", "zone": "South Wing", "coordinates": { "x": 60, "y": 75 }, "connectedTo": ["sjt_corr_S_G"] },
+    { "id": "G17", "name": "Software Development & Management Lab", "type": "Lab", "zone": "East Wing", "coordinates": { "x": 85, "y": 40 }, "connectedTo": ["sjt_corr_E_G"] },
+    { "id": "G18", "name": "Embedded Systems & IoT Lab", "type": "Lab", "zone": "East Wing", "coordinates": { "x": 85, "y": 60 }, "connectedTo": ["sjt_corr_E_G"] },
+    { "id": "G16", "name": "Classroom", "type": "Academic", "zone": "East Wing", "coordinates": { "x": 75, "y": 60 }, "connectedTo": ["sjt_corr_E_G"] },
+    { "id": "sjt_restroom_M_G", "name": "Gents Restroom", "type": "Restroom", "zone": "West Wing", "coordinates": { "x": 15, "y": 45 }, "connectedTo": ["sjt_corr_W_G"] },
+    { "id": "sjt_restroom_F_G", "name": "Ladies Restroom", "type": "Restroom", "zone": "West Wing", "coordinates": { "x": 15, "y": 55 }, "connectedTo": ["sjt_corr_W_G"] }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "floor": "7",
+  "building": "PRP",
+  "nodes": [
+    { "id": "node_lobby_7", "name": "7th Floor Lobby", "type": "Waypoint", "zone": "Core", "coordinates": { "x": 50, "y": 60 }, "connectedTo": ["node_lift_7", "node_corr_right_7", "node_corr_left_7", "node_corr_back_7"] },
+    { "id": "node_lift_7", "name": "Main Elevators", "type": "Transport", "zone": "Core", "coordinates": { "x": 50, "y": 50 }, "connectedTo": ["node_lobby_7", "node_lift_6"] },
+    { "id": "node_corr_right_7", "name": "Right Corridor", "type": "Corridor", "zone": "Right Wing", "coordinates": { "x": 75, "y": 50 }, "connectedTo": ["node_lobby_7", "701", "702", "703"] },
+    { "id": "node_corr_left_7", "name": "Left Corridor", "type": "Corridor", "zone": "Left Wing", "coordinates": { "x": 25, "y": 50 }, "connectedTo": ["node_lobby_7", "705", "706", "707"] },
+    { "id": "node_corr_back_7", "name": "Back Corridor", "type": "Corridor", "zone": "Back Wing", "coordinates": { "x": 50, "y": 20 }, "connectedTo": ["node_lobby_7", "710", "711", "712"] },
+
+    { "id": "701", "name": "Advanced Materials Research", "type": "Research", "zone": "Right Wing", "coordinates": { "x": 75, "y": 35 }, "connectedTo": ["node_corr_right_7"] },
+    { "id": "702", "name": "Nanotechnology Lab", "type": "Research", "zone": "Right Wing", "coordinates": { "x": 80, "y": 25 }, "connectedTo": ["node_corr_right_7"] },
+    { "id": "703", "name": "Faculty Cabins - SAS", "type": "Faculty", "zone": "Right Wing", "coordinates": { "x": 85, "y": 15 }, "connectedTo": ["node_corr_right_7"] },
+    
+    { "id": "705", "name": "Advanced Chemistry Wet Lab", "type": "Lab", "zone": "Left Wing", "coordinates": { "x": 20, "y": 45 }, "connectedTo": ["node_corr_left_7"] },
+    { "id": "706", "name": "Advanced Biology Wet Lab", "type": "Lab", "zone": "Left Wing", "coordinates": { "x": 15, "y": 35 }, "connectedTo": ["node_corr_left_7"] },
+    { "id": "707", "name": "Spectroscopy Center", "type": "Lab", "zone": "Left Wing", "coordinates": { "x": 10, "y": 25 }, "connectedTo": ["node_corr_left_7"] },
+
+    { "id": "710", "name": "Ladies Restroom", "type": "Restroom", "zone": "Back Wing", "coordinates": { "x": 40, "y": 25 }, "connectedTo": ["node_corr_back_7"] },
+    { "id": "711", "name": "Gents Restroom", "type": "Restroom", "zone": "Back Wing", "coordinates": { "x": 60, "y": 25 }, "connectedTo": ["node_corr_back_7"] },
+    { "id": "712", "name": "Roof Access / Maintenance", "type": "Service", "zone": "Back Wing", "coordinates": { "x": 35, "y": 10 }, "connectedTo": ["node_corr_back_7"] }
+  ]
+}

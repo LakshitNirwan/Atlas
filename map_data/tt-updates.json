@@ -1,0 +1,11 @@
+{
+  "building": "TT",
+  "nodes": [
+    { "id": "TT_G_FOOD", "floor": "G", "building": "TT", "name": "TT Food Court / Woodys", "type": "Landmark", "zone": "South Wing", "pos_x": 100, "pos_y": 220 },
+    { "id": "TT_1_LIBRARY", "floor": "1", "building": "TT", "name": "SMEC Department Library", "type": "Academic", "zone": "West Wing", "pos_x": 30, "pos_y": 140 }
+  ],
+  "edges": [
+    { "source_node": "TT_G_LOBBY", "target_node": "TT_G_FOOD" },
+    { "source_node": "TT_1_LOBBY", "target_node": "TT_1_LIBRARY" }
+  ]
+}

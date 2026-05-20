@@ -1,0 +1,15 @@
+{
+  "building": "SJT",
+  "nodes": [
+    { "id": "SJT_411", "floor": "4", "building": "SJT", "name": "Homi J. Bhabha Gallery", "type": "Auditorium", "zone": "Central Hub", "pos_x": 120, "pos_y": 100 },
+    { "id": "SJT_511", "floor": "5", "building": "SJT", "name": "P.V. Narasimha Rao Gallery", "type": "Auditorium", "zone": "Central Hub", "pos_x": 120, "pos_y": 100 },
+    { "id": "SJT_611", "floor": "6", "building": "SJT", "name": "Sarojini Naidu Gallery", "type": "Auditorium", "zone": "Central Hub", "pos_x": 120, "pos_y": 100 },
+    { "id": "SJT_811", "floor": "8", "building": "SJT", "name": "Bhagat Singh Gallery", "type": "Auditorium", "zone": "Central Hub", "pos_x": 120, "pos_y": 100 }
+  ],
+  "edges": [
+    { "source_node": "SJT_4_LOBBY", "target_node": "SJT_411" },
+    { "source_node": "SJT_5_LOBBY", "target_node": "SJT_511" },
+    { "source_node": "SJT_6_LOBBY", "target_node": "SJT_611" },
+    { "source_node": "SJT_8_LOBBY", "target_node": "SJT_811" }
+  ]
+}

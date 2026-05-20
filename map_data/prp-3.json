@@ -1,0 +1,26 @@
+{
+  "floor": "3",
+  "building": "PRP",
+  "nodes": [
+    { "id": "node_lobby_3", "name": "3rd Floor Lobby", "type": "Waypoint", "zone": "Core", "coordinates": { "x": 50, "y": 60 }, "connectedTo": ["node_lift_3", "node_corr_right_3", "node_corr_left_3", "node_corr_back_3"] },
+    { "id": "node_lift_3", "name": "Main Elevators", "type": "Transport", "zone": "Core", "coordinates": { "x": 50, "y": 50 }, "connectedTo": ["node_lobby_3", "node_lift_2", "node_lift_4"] },
+    { "id": "node_corr_right_3", "name": "Right Corridor", "type": "Corridor", "zone": "Right Wing", "coordinates": { "x": 75, "y": 50 }, "connectedTo": ["node_lobby_3", "301", "302", "303", "304"] },
+    { "id": "node_corr_left_3", "name": "Left Corridor", "type": "Corridor", "zone": "Left Wing", "coordinates": { "x": 25, "y": 50 }, "connectedTo": ["node_lobby_3", "305", "306", "307", "308"] },
+    { "id": "node_corr_back_3", "name": "Back Corridor", "type": "Corridor", "zone": "Back Wing", "coordinates": { "x": 50, "y": 20 }, "connectedTo": ["node_lobby_3", "310", "311", "312", "313"] },
+
+    { "id": "301", "name": "AI & Machine Learning Lab", "type": "Lab", "zone": "Right Wing", "coordinates": { "x": 75, "y": 35 }, "connectedTo": ["node_corr_right_3"] },
+    { "id": "302", "name": "AI & Machine Learning Lab 2", "type": "Lab", "zone": "Right Wing", "coordinates": { "x": 80, "y": 25 }, "connectedTo": ["node_corr_right_3"] },
+    { "id": "303", "name": "High Performance Computing Lab", "type": "Lab", "zone": "Right Wing", "coordinates": { "x": 85, "y": 15 }, "connectedTo": ["node_corr_right_3"] },
+    { "id": "304", "name": "Faculty Cabins - SCOPE", "type": "Faculty", "zone": "Right Wing", "coordinates": { "x": 90, "y": 60 }, "connectedTo": ["node_corr_right_3"] },
+    
+    { "id": "305", "name": "IoT Systems Lab", "type": "Lab", "zone": "Left Wing", "coordinates": { "x": 20, "y": 45 }, "connectedTo": ["node_corr_left_3"] },
+    { "id": "306", "name": "IoT Systems Lab 2", "type": "Lab", "zone": "Left Wing", "coordinates": { "x": 15, "y": 35 }, "connectedTo": ["node_corr_left_3"] },
+    { "id": "307", "name": "Cloud Computing Lab", "type": "Lab", "zone": "Left Wing", "coordinates": { "x": 10, "y": 25 }, "connectedTo": ["node_corr_left_3"] },
+    { "id": "308", "name": "Server Room", "type": "Service", "zone": "Left Wing", "coordinates": { "x": 5, "y": 15 }, "connectedTo": ["node_corr_left_3"] },
+
+    { "id": "310", "name": "Ladies Restroom", "type": "Restroom", "zone": "Back Wing", "coordinates": { "x": 40, "y": 25 }, "connectedTo": ["node_corr_back_3"] },
+    { "id": "311", "name": "Gents Restroom", "type": "Restroom", "zone": "Back Wing", "coordinates": { "x": 60, "y": 25 }, "connectedTo": ["node_corr_back_3"] },
+    { "id": "312", "name": "Computer Networks Lab", "type": "Lab", "zone": "Back Wing", "coordinates": { "x": 35, "y": 10 }, "connectedTo": ["node_corr_back_3"] },
+    { "id": "313", "name": "Computer Networks Lab 2", "type": "Lab", "zone": "Back Wing", "coordinates": { "x": 65, "y": 10 }, "connectedTo": ["node_corr_back_3"] }
+  ]
+}

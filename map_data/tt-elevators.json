@@ -1,0 +1,13 @@
+{
+  "building": "TT",
+  "nodes": [],
+  "edges": [
+    { "source_node": "TT_G_LOBBY", "target_node": "TT_1_LOBBY" },
+    { "source_node": "TT_1_LOBBY", "target_node": "TT_2_LOBBY" },
+    { "source_node": "TT_2_LOBBY", "target_node": "TT_3_LOBBY" },
+    { "source_node": "TT_3_LOBBY", "target_node": "TT_4_LOBBY" },
+    { "source_node": "TT_4_LOBBY", "target_node": "TT_5_LOBBY" },
+    { "source_node": "TT_5_LOBBY", "target_node": "TT_6_LOBBY" },
+    { "source_node": "TT_6_LOBBY", "target_node": "TT_7_LOBBY" }
+  ]
+}

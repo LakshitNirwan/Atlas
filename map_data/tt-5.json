@@ -1,0 +1,16 @@
+{
+  "building": "TT",
+  "nodes": [
+    { "id": "TT_5_LOBBY", "floor": "5", "building": "TT", "name": "Fifth Floor Elevators", "type": "Elevator", "zone": "Center", "pos_x": 100, "pos_y": 140 },
+    { "id": "TT_501", "floor": "5", "building": "TT", "name": "Cyber Security Lab", "type": "Lab", "zone": "West Wing", "pos_x": 50, "pos_y": 140 },
+    { "id": "TT_502", "floor": "5", "building": "TT", "name": "Cloud Computing Lab", "type": "Lab", "zone": "East Wing", "pos_x": 150, "pos_y": 140 },
+    { "id": "TT_503", "floor": "5", "building": "TT", "name": "Data Science Lab", "type": "Lab", "zone": "North Wing", "pos_x": 100, "pos_y": 90 },
+    { "id": "TT_504", "floor": "5", "building": "TT", "name": "AR/VR Development Lab", "type": "Lab", "zone": "South Wing", "pos_x": 100, "pos_y": 190 }
+  ],
+  "edges": [
+    { "source_node": "TT_5_LOBBY", "target_node": "TT_501" },
+    { "source_node": "TT_5_LOBBY", "target_node": "TT_502" },
+    { "source_node": "TT_5_LOBBY", "target_node": "TT_503" },
+    { "source_node": "TT_5_LOBBY", "target_node": "TT_504" }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "building": "MB",
+  "nodes": [
+    { "id": "MB_ENT", "floor": "G", "building": "MB", "name": "MB Main Entrance", "type": "Landmark", "zone": "Exterior", "pos_x": 100, "pos_y": 190 },
+    { "id": "MB_G_LOBBY", "floor": "G", "building": "MB", "name": "Ground Floor Foyer", "type": "Corridor", "zone": "Center", "pos_x": 100, "pos_y": 140 },
+    { "id": "MB_G01", "floor": "G", "building": "MB", "name": "Channa Reddy Auditorium", "type": "Auditorium", "zone": "West Wing", "pos_x": 50, "pos_y": 140 },
+    { "id": "MB_G02", "floor": "G", "building": "MB", "name": "Admissions Office", "type": "Office", "zone": "East Wing", "pos_x": 150, "pos_y": 140 },
+    { "id": "MB_G03", "floor": "G", "building": "MB", "name": "Finance Office & Cash Counter", "type": "Office", "zone": "North Wing", "pos_x": 100, "pos_y": 90 },
+    { "id": "MB_G04", "floor": "G", "building": "MB", "name": "Indian Bank & Post Office", "type": "Landmark", "zone": "East Wing", "pos_x": 180, "pos_y": 140 }
+  ],
+  "edges": [
+    { "source_node": "MB_ENT", "target_node": "MB_G_LOBBY" },
+    { "source_node": "MB_G_LOBBY", "target_node": "MB_G01" },
+    { "source_node": "MB_G_LOBBY", "target_node": "MB_G02" },
+    { "source_node": "MB_G_LOBBY", "target_node": "MB_G03" },
+    { "source_node": "MB_G02", "target_node": "MB_G04" }
+  ]
+}

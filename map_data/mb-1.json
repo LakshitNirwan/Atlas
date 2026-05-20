@@ -1,0 +1,16 @@
+{
+  "building": "MB",
+  "nodes": [
+    { "id": "MB_1_LOBBY", "floor": "1", "building": "MB", "name": "First Floor Elevators", "type": "Elevator", "zone": "Center", "pos_x": 100, "pos_y": 140 },
+    { "id": "MB_101", "floor": "1", "building": "MB", "name": "Vice Chancellor's Office", "type": "Office", "zone": "West Wing", "pos_x": 50, "pos_y": 140 },
+    { "id": "MB_102", "floor": "1", "building": "MB", "name": "Pro-Vice Chancellor's Office", "type": "Office", "zone": "West Wing", "pos_x": 30, "pos_y": 140 },
+    { "id": "MB_103", "floor": "1", "building": "MB", "name": "Registrar's Office", "type": "Office", "zone": "East Wing", "pos_x": 150, "pos_y": 140 },
+    { "id": "MB_104", "floor": "1", "building": "MB", "name": "Main Board Room", "type": "Office", "zone": "North Wing", "pos_x": 100, "pos_y": 90 }
+  ],
+  "edges": [
+    { "source_node": "MB_1_LOBBY", "target_node": "MB_101" },
+    { "source_node": "MB_101", "target_node": "MB_102" },
+    { "source_node": "MB_1_LOBBY", "target_node": "MB_103" },
+    { "source_node": "MB_1_LOBBY", "target_node": "MB_104" }
+  ]
+}
