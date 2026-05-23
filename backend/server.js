@@ -64,7 +64,7 @@ app.get('/', (req, res) => {
 app.get('/api/buildings', async (req, res) => {
     try {
         // Ask the database for every unique building name in the map_nodes table
-        const result = await pool.query('SELECT DISTINCT building FROM map_nodes');
+        const result = await pool.query('SELECT DISTINCT building FROM public.map_nodes');
         
         // The database returns a complex object. We map over it to just extract the names 
         // and send them to the browser as a clean array like ["PRP", "SJT"]
@@ -91,7 +91,7 @@ app.get('/api/search', async (req, res) => {
 
     try {
         // Match the query against the room name OR the exact ID
-        let sql = `SELECT * FROM map_nodes WHERE (name ILIKE $1 OR id ILIKE $1)`;
+        let sql = `SELECT * FROM public.map_nodes WHERE (name ILIKE $1 OR id ILIKE $1)`;
         let params = [`%${query}%`];
 
         // Strictly lock to the selected building (using ILIKE to be perfectly case-insensitive)
@@ -123,15 +123,15 @@ app.get('/api/graph/:building', async (req, res) => {
 
         // Query 1: Grab every single room/node that belongs to this specific building
         const nodes = await pool.query(
-            'SELECT * FROM map_nodes WHERE building = $1', 
+            'SELECT * FROM public.map_nodes WHERE building = $1', 
             [building.toUpperCase()]
         );
 
         // Query 2: Grab the connections (edges). We only want edges where the starting room
         // is inside the requested building.
         const edges = await pool.query(
-            `SELECT e.* FROM map_edges e
-             JOIN map_nodes n ON e.source_node = n.id
+            `SELECT e.* FROM public.map_edges e
+             JOIN public.map_nodes n ON e.source_node = n.id
              WHERE n.building = $1`,
             [building.toUpperCase()]
         );
@@ -169,7 +169,7 @@ app.post('/api/auth/register', async (req, res) => {
 
     try {
         // Check if user already exists
-        const userExists = await pool.query('SELECT * FROM users WHERE reg_no = $1', [reg_no.toUpperCase()]);
+        const userExists = await pool.query('SELECT * FROM public.users WHERE reg_no = $1', [reg_no.toUpperCase()]);
         if (userExists.rows.length > 0) {
             return res.status(400).json({ error: "Registration number already exists!" });
         }
@@ -180,7 +180,7 @@ app.post('/api/auth/register', async (req, res) => {
 
         // Save to database
         const newUser = await pool.query(
-            'INSERT INTO users (name, reg_no, password) VALUES ($1, $2, $3) RETURNING id, name, reg_no',
+            'INSERT INTO public.users (name, reg_no, password) VALUES ($1, $2, $3) RETURNING id, name, reg_no',
             [name, reg_no.toUpperCase(), hashedPassword]
         );
 
@@ -202,7 +202,7 @@ app.post('/api/auth/login', async (req, res) => {
 
     try {
         // Find the user
-        const result = await pool.query('SELECT * FROM users WHERE reg_no = $1', [reg_no.toUpperCase()]);
+        const result = await pool.query('SELECT * FROM public.users WHERE reg_no = $1', [reg_no.toUpperCase()]);
         if (result.rows.length === 0) {
             return res.status(400).json({ error: "User not found. Please register." });
         }
@@ -231,7 +231,7 @@ app.post('/api/auth/login', async (req, res) => {
 // ==========================================
 
 // We HARDCODE Port 5000 here so it never accidentally steals the Postgres port (5432)
-const PORT = 5000; 
+const PORT = process.env.PORT || 5000; 
 
 // Tell the server to turn on, listen at Port 5000, and print a message when ready
 app.listen(PORT, () => {
