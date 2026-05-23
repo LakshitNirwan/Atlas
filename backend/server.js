@@ -40,11 +40,10 @@ app.use(express.json());
 
 // We create a "Pool". Think of this as a pipeline to your pgAdmin database.
 const pool = new Pool({
-    user: process.env.DB_USER,         // Usually 'postgres'
-    host: process.env.DB_HOST,         // Usually 'localhost'
-    database: process.env.DB_NAME,     // Pulls 'atlas' from your .env
-    password: process.env.DB_PASSWORD, // Pulls your password from .env
-    port: process.env.DB_PORT,         // MUST be 5432 (The Postgres door)
+  connectionString: process.env.DATABASE_URL,
+  ssl: {
+    rejectUnauthorized: false,
+  },
 });
 
 
